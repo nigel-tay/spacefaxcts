@@ -4,13 +4,13 @@ import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
 import spiritopportunity from "../models/spirit_opportunity.glb";
 import aboutBackground from "../images/mars-background.jpg";
-import marsBackground from "../videos/mars-section1.mov";
+// import marsBackground from "../videos/mars-section1.mov";
 
 function Spirit(props) {
     return (
         <div className="spirit-container">
             <div className="section-1">
-                <video src={marsBackground} autoPlay loop muted />
+                {/*<video src={marsBackground} autoPlay loop muted />*/}
                 <h1 className="spirit-title">Spirit and Opportunity</h1>
                 <div className="model-container">
                     <model-viewer src={spiritopportunity}
