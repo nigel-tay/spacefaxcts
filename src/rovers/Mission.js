@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import {Card, CardColumns, Row} from "react-bootstrap";
+import missionBackground from "../images/earth-background.jpeg"
 
 function Mission() {
 
@@ -37,7 +38,7 @@ function Mission() {
 
     return (
         <div>
-            <div className="mission-container">
+            <div className="mission-container" style={{backgroundImage: `url(${missionBackground})`}}>
                 <div className="section-1">
                     <h1 className="mission-title">Mission Photos from {rover}</h1>
                     <p className="mission-description">Images captured from NASA's Mars Rovers</p>
@@ -49,7 +50,7 @@ function Mission() {
                         <CardColumns className="g-3">
                             {missionPhotos.map((el) =>(
 
-                                <Card>
+                                <Card bg="dark" text="light">
                                     <Card.Img variant="top"
                                               src={el.img_src}
                                               className="card-image"

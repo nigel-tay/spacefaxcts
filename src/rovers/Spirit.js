@@ -3,14 +3,12 @@ import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
 import spiritopportunity from "../models/spirit_opportunity.glb";
-import aboutBackground from "../images/mars-background.jpg";
-// import marsBackground from "../videos/mars-section1.mov";
+import spiritBackground from "../images/mars-background.jpg";
 
-function Spirit(props) {
+function Spirit() {
     return (
         <div className="spirit-container">
             <div className="section-1">
-                {/*<video src={marsBackground} autoPlay loop muted />*/}
                 <h1 className="spirit-title">Spirit and Opportunity</h1>
                 <div className="model-container">
                     <model-viewer src={spiritopportunity}
@@ -26,7 +24,7 @@ function Spirit(props) {
                 <div className="scroll">scroll placeholder</div>
             </div>
 
-            <div className="section-2" style={{backgroundImage: `url(${aboutBackground})`}}>
+            <div className="section-2" style={{backgroundImage: `url(${spiritBackground})`}}>
                 <div className="split">
                     <div className="spirit-image-container">
                         <Image className="spirit-image" src={sophoto} alt="spirit and opportunity standing side by side" />
@@ -43,21 +41,23 @@ function Spirit(props) {
                             After months of testing and carefully planned maneuvers,
                             NASA ended efforts to free the rover and eventually ended the mission on May 25, 2011." - taken from https://www.jpl.nasa.gov/missions/mars-exploration-rover-spirit-mer-spirit
                         </p>
-                        <p><a href="https://www.jpl.nasa.gov/missions/mars-exploration-rover-spirit-mer-spirit" target="_blank" rel="noreferrer">
-                            Visit Spirit's mission page</a>
+                        <p>
+                            <a className="visit-mission" href="https://www.jpl.nasa.gov/missions/mars-exploration-rover-spirit-mer-spirit" target="_blank" rel="noreferrer">
+                                Visit Spirit's mission page
+                            </a>
                         </p>
                     </div>
                 </div>
 
-                <div className="bottom-links">
+                <div className="bottom-link-container">
                     <h5>
-                        <Link to="/mars/curiosity">{`< MER Curiosity`}</Link>
+                        <Link to="/mars/curiosity" className="bottom-links"><p>{`< MER Curiosity`}</p></Link>
                     </h5>
                     <h3>
-                        <Link to="/mars/spirit-mission">Mission Photos</Link>
+                        <Link to="/mars/spirit-mission" className="bottom-links"><p>Mission Photos</p></Link>
                     </h3>
                     <h5>
-                        <Link to="/mars/opportunity">{`MER Opportunity >`}</Link>
+                        <Link to="/mars/opportunity" className="bottom-links"><p>{`MER Opportunity >`}</p></Link>
                     </h5>
                 </div>
 

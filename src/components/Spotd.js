@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Image} from "react-bootstrap";
 import axios from "axios";
-// import spotdBackground from "../videos/spotd-section1.mov";
-import s2 from "../images/spotd.JPEG";
+import s1 from "../images/spotd.JPEG";
 
 function Spotd(props) {
     const [apod, setApod] = useState([])
@@ -15,9 +14,8 @@ function Spotd(props) {
     },[])
 
     return (
-        <div className="spotd-container">
+        <div className="spotd-container" style={{backgroundImage: `url(${s1})`}}>
             <div className="section-1">
-                {/*<video src={spotdBackground} autoPlay loop muted />*/}
                 <h1 className="spotd-title">#SPOTD</h1>
                 <p className="spotd-description">Our Universe</p>
                 <div className="scroll">scroll placeholder</div>

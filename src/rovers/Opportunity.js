@@ -3,8 +3,10 @@ import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
 import spiritopportunity from "../models/spirit_opportunity.glb";
+import opportunityBackground from "../images/mars-background.jpg";
+import spiritBackground from "../images/mars-background.jpg";
 
-function Opportunity(props) {
+function Opportunity() {
     return (
         <div className="opportunity-container">
             <div className="section-1">
@@ -24,7 +26,7 @@ function Opportunity(props) {
                 <div className="scroll">scroll placeholder</div>
             </div>
 
-            <div className="section-2">
+            <div className="section-2" style={{backgroundImage: `url(${opportunityBackground})`}}>
                 <div className="split">
                     <div className="opportunity-content">
                         <h3 className="opportunity-content-title">Mission overview</h3>
@@ -42,24 +44,24 @@ function Opportunity(props) {
                             attempt to revive Opportunity Tuesday, February 13, 2019, to no avail. The solar-powered rover's
                             final communication was received June 10." - taken from https://www.jpl.nasa.gov/missions/mars-exploration-rover-opportunity-mer
                         </p>
-                        <p><a href="https://www.jpl.nasa.gov/missions/mars-exploration-rover-opportunity-mer" target="_blank" rel="noreferrer">
+                        <p><a className="visit-mission" href="https://www.jpl.nasa.gov/missions/mars-exploration-rover-opportunity-mer" target="_blank" rel="noreferrer">
                             Visit Opportunity's mission page</a>
                         </p>
                     </div>
                     <div className="opportunity-image-container">
-                        <Image className="opportunity-image" src={sophoto} alt="" />
+                        <Image className="opportunity-image" src={sophoto} alt="spirit and opportunity standing side by side" />
                     </div>
                 </div>
 
-                <div className="bottom-links">
+                <div className="bottom-link-container">
                     <h5>
-                        <Link to="/mars/spirit">{`< MER Spirit`}</Link>
+                        <Link to="/mars/spirit" className="bottom-links">{`< MER Spirit`}</Link>
                     </h5>
                     <h3>
-                        <Link to="/mars/opportunity-mission">Mission Photos</Link>
+                        <Link to="/mars/opportunity-mission" className="bottom-links">Mission Photos</Link>
                     </h3>
                     <h5>
-                        <Link to="/mars/curiosity">{`MER Curiosity >`}</Link>
+                        <Link to="/mars/curiosity" className="bottom-links">{`MER Curiosity >`}</Link>
                     </h5>
                 </div>
             </div>

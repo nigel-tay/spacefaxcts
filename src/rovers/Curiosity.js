@@ -3,6 +3,8 @@ import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import curiosityPhoto from "../images/curiosity.jpeg";
 import curiosity from "../models/curiosity.glb";
+import curiosityBackground from "../images/mars-background.jpg";
+import spiritBackground from "../images/mars-background.jpg";
 
 function Curiosity() {
     return (
@@ -25,7 +27,7 @@ function Curiosity() {
                 <div className="scroll">scroll placeholder</div>
             </div>
 
-            <div className="section-2">
+            <div className="section-2" style={{backgroundImage: `url(${curiosityBackground})`}}>
                 <div className="split">
                     <div className="curiosity-image-container">
                         <Image className="curiosity-image" src={curiosityPhoto} alt="curiosity standing proudly on the surface of mars" />
@@ -41,15 +43,15 @@ function Curiosity() {
                     </div>
                 </div>
 
-                <div className="bottom-links">
+                <div className="bottom-link-container">
                     <h5>
-                        <Link to="/mars/spirit">{`< MER Spirit`}</Link>
+                        <Link to="/mars/spirit" className="bottom-links">{`< MER Spirit`}</Link>
                     </h5>
                     <h3>
-                        <Link to="/mars/curiosity-mission">Mission Photos</Link>
+                        <Link to="/mars/curiosity-mission" className="bottom-links">Mission Photos</Link>
                     </h3>
                     <h5>
-                        <Link to="/mars/opportunity">{`MER Opportunity >`}</Link>
+                        <Link to="/mars/opportunity" className="bottom-links">{`MER Opportunity >`}</Link>
                     </h5>
                 </div>
             </div>

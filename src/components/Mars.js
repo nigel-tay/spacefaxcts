@@ -4,20 +4,20 @@ import CuriosityImg from "../images/curiosity.jpg"
 import OpportunityImg from "../images/opportunity.jpg"
 import SpiritImg from "../images/spirit.jpg"
 import {Link} from "react-router-dom";
-// import marsBackground from "../videos/mars-section1.mov";
+import s1 from "../images/mars.jpg";
 import s2 from "../images/mars-background.jpg";
 
 function Mars() {
     return (
-        <div className="mars-container">
+        <div className="mars-container"  style={{backgroundImage: `url(${s1})`}}>
             <div className="section-1">
-                {/*<video src={marsBackground} autoPlay loop muted />*/}
                 <h1 className="mars-title">Mars</h1>
                 <p className="mars-description">The red planet</p>
                 <div className="scroll">scroll placeholder</div>
             </div>
 
-            <div className="section-2">
+            <div className="section-2" style={{backgroundImage: `url(${s2})`}}>
+                <h3>Select a Rover to find out more about it.</h3>
                 <Row xs={1} md={3} className="card-rows">
                     <Link to="/mars/spirit">
                         <Card className="mars-card">
