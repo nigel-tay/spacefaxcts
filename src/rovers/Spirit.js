@@ -11,7 +11,7 @@ function Spirit() {
                 <h1 className="spirit-title">Spirit and Opportunity</h1>
                 <div className="model-container">
                     <iframe src='https://solarsystem.nasa.gov/gltf_embed/2370' width='100%' height='450px'
-                            frameBorder='0'/>
+                            frameBorder='0' title="spirit rover"/>
                 </div>
                 <h3 className="spirit-description">Mars Exploration Rover - Spirit</h3>
                 <p className="spirit-description">

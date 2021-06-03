@@ -10,7 +10,7 @@ function Curiosity() {
             <div className="section-1">
                 <h1 className="curiosity-title">Curiosity</h1>
                 <div className="model-container">
-                    <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="450px" frameBorder="0"/>
+                    <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="450px" frameBorder="0" title="curiosity rover"/>
                 </div>
                 <h3 className="curiosity-description">The biggest bestest boy</h3>
                 <p className="curiosity-description">

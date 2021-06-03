@@ -30,10 +30,8 @@ function Mission() {
             axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&api_key=Dvef1dOc51iUgHDH93ncfcFAbriP6uDccUuTIo4x&page=1`)
                 .then(res =>{
                     setMissionPhotos(res.data.photos)
-                    console.log(missionPhotos)
                 })
         }
-        console.log(missionPhotos)
     },[missionPhotos, rover, sol])
 
     return (
@@ -52,9 +50,9 @@ function Mission() {
                 <div className="section-2">
                     <Row className="d-flex justify-content-center">
                         <CardColumns className="g-3">
-                            {missionPhotos.map((el) =>(
+                            {missionPhotos.map((el, idx) =>(
 
-                                <Card bg="dark" text="light">
+                                <Card bg="dark" text="light" key={idx}>
                                     <Card.Img variant="top"
                                               src={el.img_src}
                                               className="card-image"

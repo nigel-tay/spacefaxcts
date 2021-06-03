@@ -1,7 +1,6 @@
 import React from 'react';
-import {Container, Dropdown, DropdownButton, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import {NavLink} from "react-router-dom";
-import DropdownMenu from "react-bootstrap/DropdownMenu";
 
 function Navigation() {
     return (

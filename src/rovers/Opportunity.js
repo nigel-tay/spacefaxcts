@@ -11,7 +11,7 @@ function Opportunity() {
                 <h1 className="opportunity-title">Spirit and Opportunity</h1>
                 <div className="model-container">
                     <iframe src='https://solarsystem.nasa.gov/gltf_embed/2370' width='100%' height='450px'
-                            frameBorder='0'/>
+                            frameBorder='0' title="opportunity rover"/>
                 </div>
                 <h3 className="opportunity-description">Mars Exploration Rover - Opportunity</h3>
                 <p className="opportunity-description">
