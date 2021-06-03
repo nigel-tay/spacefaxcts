@@ -705,6 +705,10 @@
   .bottom-link-container{
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: (768px)){
+      display: flex;
+      flex-direction: column;
+    }
     .bottom-links{
       text-decoration: none;
       p{
