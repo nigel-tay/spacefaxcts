@@ -40,17 +40,7 @@
   }
 }
 //==rover style for bottom links
-.bottom-link-container{
-  display: flex;
-  justify-content: space-evenly;
-  .bottom-links{
-    margin-bottom: 23%;
-    text-decoration: none;
-    p{
-      color: white;
-    }
-  }
-}
+
 //====================HOME====================
 .home-container{
   height: 100vh;
@@ -78,6 +68,9 @@
     height: 120%;
     margin: 0 !important;
     background-color: black;
+    @media (max-width: (768px)){
+      height: 150%;
+    }
     .card-rows{
       margin: 0 20%;
       .home-card{
@@ -180,6 +173,9 @@
     padding-top: 10%;;
     margin-inline: auto;
     background-color: black;
+    @media (max-width: (768px)){
+      height: 150%;
+    }
 
     .split{
       display: flex;
@@ -264,6 +260,9 @@
     margin: 0 !important;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: (768px)){
+      height: 150%;
+    }
     h3{
       width: 100%;
       display: flex;
@@ -333,6 +332,9 @@
     height: 100%;
     padding-top: 10%;
     background: linear-gradient(black, #9f88d8);
+    @media (max-width: (768px)){
+      height: 150%;
+    }
     .split{
       display: flex;
       flex-direction: column;
@@ -376,7 +378,7 @@
 .spirit-container{
   height: 200vh;
   .section-1{
-    padding-top: 0;
+    padding-top: 40px;
     margin-top: 0;
     height: 50%;
     background: linear-gradient(darkslategrey, #ffb08e);
@@ -416,6 +418,9 @@
     height: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: (768px)){
+      height: 80%;
+    }
     .split{
       display: flex;
       flex-direction: column;
@@ -436,10 +441,12 @@
         padding: 10em 1.5em;
         color: white;
         font-weight: bold;
+
         .visit-mission{
           text-decoration: none;
           font-weight: bold;
           color: #9f88d8;
+
         }
       }
     }
@@ -451,13 +458,33 @@
         flex-basis: 100%
       }
     }
+
+    .bottom-link-container{
+      display: flex;
+      justify-content: space-evenly;
+      @media (max-width: (768px)){
+        display: flex;
+        flex-direction: column;
+      }
+      .bottom-links{
+        margin-bottom: 23%;
+        text-decoration: none;
+        p{
+          text-align: center;
+          padding-top: 5rem;
+          color: white;
+        }
+      }
+    }
   }
 }
 
 //====================OPPORTUNITY====================
 .opportunity-container{
   height: 200vh;
+  color: white;
   .section-1{
+    padding-top: 40px;
     height: 50%;
     background: linear-gradient(darkslategrey, #ffb08e);
     .opportunity-title{
@@ -493,6 +520,10 @@
     height: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: (768px)){
+      height: 100%;
+    }
     .split{
       display: flex;
       flex-direction: column;
@@ -511,7 +542,6 @@
       }
       .opportunity-content {
         padding: 8em 1.5em;
-        color: white;
         font-weight: bold;
 
         .visit-mission {
@@ -533,9 +563,17 @@
   .bottom-link-container{
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: (768px)){
+      display: flex;
+      flex-direction: column;
+    }
     .bottom-links{
       text-decoration: none;
-      color: white;
+      p{
+        padding-top: 5rem;
+        text-align: center;
+        color: white;
+      }
     }
   }
 
@@ -544,7 +582,9 @@
 //====================CURIOSITY====================
 .curiosity-container{
   height: 200vh;
+  color: white;
   .section-1{
+    padding-top: 40px;
     height: 50%;
     background: linear-gradient(darkslategrey, #ffb08e);
     .curiosity-title{
@@ -577,10 +617,13 @@
   }
 
   .section-2{
-    height: 50%;
+    height: 60%;
     margin-inline: auto;
     background: no-repeat;
     background-size: cover;
+    @media (max-width: (768px)){
+      height: 80%;
+    }
     .split{
       display: flex;
       flex-direction: column;
@@ -600,7 +643,6 @@
       }
       .curiosity-content{
         padding: 10em 1.5em 20em;
-        color: white;
         font-weight: bold;
         .spotd-content-title{
           margin-bottom: 1em;
@@ -621,7 +663,11 @@
     justify-content: space-evenly;
     .bottom-links{
       text-decoration: none;
-      color: white;
+      p{
+        padding-top: 5rem;
+        text-align: center;
+        color: white;
+      }
     }
   }
 
@@ -666,6 +712,7 @@
     background-color: black;
     margin-inline: auto;
     p{
+      color: white;
       margin-bottom: 3%;
     }
   }

@@ -55,13 +55,13 @@ function Opportunity() {
 
                 <div className="bottom-link-container">
                     <h5>
-                        <Link to="/mars/spirit" className="bottom-links">{`< MER Spirit`}</Link>
+                        <Link to="/mars/spirit" className="bottom-links"><p>{`< MER Spirit`}</p></Link>
                     </h5>
                     <h3>
-                        <Link to="/mars/opportunity-mission" className="bottom-links">Mission Photos</Link>
+                        <Link to="/mars/opportunity-mission" className="bottom-links"><p>Mission Photos</p></Link>
                     </h3>
                     <h5>
-                        <Link to="/mars/curiosity" className="bottom-links">{`MER Curiosity >`}</Link>
+                        <Link to="/mars/curiosity" className="bottom-links"><p>{`MER Curiosity >`}</p></Link>
                     </h5>
                 </div>
             </div>

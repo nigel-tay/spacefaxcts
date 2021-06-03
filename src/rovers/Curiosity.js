@@ -45,13 +45,13 @@ function Curiosity() {
 
                 <div className="bottom-link-container">
                     <h5>
-                        <Link to="/mars/spirit" className="bottom-links">{`< MER Spirit`}</Link>
+                        <Link to="/mars/spirit" className="bottom-links"><p>{`< MER Spirit`}</p></Link>
                     </h5>
                     <h3>
-                        <Link to="/mars/curiosity-mission" className="bottom-links">Mission Photos</Link>
+                        <Link to="/mars/curiosity-mission" className="bottom-links"><p>Mission Photos</p></Link>
                     </h3>
                     <h5>
-                        <Link to="/mars/opportunity" className="bottom-links">{`MER Opportunity >`}</Link>
+                        <Link to="/mars/opportunity" className="bottom-links"><p>{`MER Opportunity >`}</p></Link>
                     </h5>
                 </div>
             </div>
