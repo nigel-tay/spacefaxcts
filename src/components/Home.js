@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
-// import homeBackground from "../videos/home-section1.mov"
+import homeBackground from "../videos/home-section1.mov"
 import about from "../images/about.jpg";
 import mars from "../images/mars.jpg";
 import earth from "../images/earth.JPEG";
@@ -11,7 +11,7 @@ function Home() {
     return (
         <div className="home-container">
             <div className="section-1">
-                {/*<video src={homeBackground} autoPlay loop muted />*/}
+                <video src={homeBackground} autoPlay loop muted />
                 <h1 className="home-title">spacefaXcts</h1>
                 <div className="scroll">scroll placeholder</div>
             </div>
