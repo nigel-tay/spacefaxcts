@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import homeBackground from "../videos/home-section1.mp4"
+import homeBackground from "../videos/home-section1.mov"
 import about from "../images/about.jpg";
 import mars from "../images/mars.jpg";
 import earth from "../images/earth.JPEG";

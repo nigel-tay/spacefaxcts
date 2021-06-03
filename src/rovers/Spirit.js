@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
 import spiritopportunity from "../models/spirit_opportunity.glb";
 import aboutBackground from "../images/mars-background.jpg";
-import marsBackground from "../videos/mars-section1.mp4";
+import marsBackground from "../videos/mars-section1.mov";
 
 function Spirit(props) {
     return (

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Image} from "react-bootstrap";
 import axios from "axios";
-import spotdBackground from "../videos/spotd-section1.mp4";
+import spotdBackground from "../videos/spotd-section1.mov";
 import s2 from "../images/spotd.JPEG";
 
 function Spotd(props) {

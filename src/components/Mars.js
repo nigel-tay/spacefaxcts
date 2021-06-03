@@ -4,7 +4,7 @@ import CuriosityImg from "../images/curiosity.jpg"
 import OpportunityImg from "../images/opportunity.jpg"
 import SpiritImg from "../images/spirit.jpg"
 import {Link} from "react-router-dom";
-import marsBackground from "../videos/mars-section1.mp4";
+import marsBackground from "../videos/mars-section1.mov";
 import s2 from "../images/mars-background.jpg";
 
 function Mars() {

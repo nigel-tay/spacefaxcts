@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image} from "react-bootstrap";
 import lunarTransit from "../images/lunar-transit.png"
-import earthBackground from "../videos/earth-section1.mp4";
+import earthBackground from "../videos/earth-section1.mov";
 import s2 from "../images/earth-background.jpeg";
 
 function Earth() {
