@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
-import {Image} from "react-bootstrap";
+import {Card, CardColumns, Row} from "react-bootstrap";
 
 function Mission() {
 
@@ -26,7 +26,7 @@ function Mission() {
     //try to get it to fetch until res.data.photos does not return an empty array
     useEffect(() => {
         if (missionPhotos.length === 0){
-            axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&api_key=Dvef1dOc51iUgHDH93ncfcFAbriP6uDccUuTIo4x`)
+            axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&api_key=Dvef1dOc51iUgHDH93ncfcFAbriP6uDccUuTIo4x&page=1`)
                 .then(res =>{
                     setMissionPhotos(res.data.photos)
                     console.log(missionPhotos)
@@ -40,23 +40,32 @@ function Mission() {
             <div className="mission-container">
                 <div className="section-1">
                     <h1 className="mission-title">Mission Photos from {rover}</h1>
-                    <p className="mission-description">Our Universe</p>
+                    <p className="mission-description">Images captured from NASA's Mars Rovers</p>
                     <div className="scroll">scroll placeholder</div>
                 </div>
-                <div className="section-2">
 
-                    {missionPhotos.map((el) =>(
-                        <div className="split">
-                            <div className="mission-image-container">
-                                <Image className="mission-image" src={el.img_src} alt="daily space image" />
-                                <p>sol: {el.sol}</p>
-                                <p>Date: {el.earth_date}</p>
-                            </div>
-                            <div className="mission-content">
-                                <h3 className="mission-content-title">Taken on {rover}'s {el.camera.full_name}</h3>
-                            </div>
-                        </div>
-                        ))}
+                <div className="section-2">
+                    <Row className="d-flex justify-content-center">
+                        <CardColumns className="g-3">
+                            {missionPhotos.map((el) =>(
+
+                                <Card>
+                                    <Card.Img variant="top"
+                                              src={el.img_src}
+                                              className="card-image"
+                                    />
+                                    <Card.Body>
+                                        <Card.Text>
+                                            {`Taken on ${rover}'s ${el.camera.full_name}`}<br/>
+                                            sol: {el.sol}<br/>
+                                            Earth date: {el.earth_date}
+                                        </Card.Text>
+
+                                    </Card.Body>
+                                </Card>
+                            ))}
+                        </CardColumns>
+                    </Row>
                     <p>1 sol = 1 solar day on Mars (24h 39mins 35s)</p>
                 </div>
             </div>

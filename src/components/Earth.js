@@ -1,13 +1,15 @@
-import React, {useEffect, useState} from 'react';
-import {Card, CardColumns, CardGroup, Col, Image, Row} from "react-bootstrap";
-import Footer from "./Footer";
+import React from 'react';
+import {Image} from "react-bootstrap";
 import lunarTransit from "../images/lunar-transit.png"
+import earthBackground from "../videos/earth-section1.mp4";
+import s2 from "../images/earth-background.jpeg";
 
-function Earth(props) {
+function Earth() {
 
     return (
         <div className="earth-container">
             <div className="section-1">
+                <video src={earthBackground} autoPlay loop muted />
                 <h1 className="earth-title">Earth</h1>
                 <p className="earth-description">Our blue marble</p>
                 <div className="scroll">scroll placeholder</div>
@@ -27,10 +29,9 @@ function Earth(props) {
                             of certain astronomical events such as lunar transits using a 2048x2048 pixel CCD
                             (Charge Coupled Device) detlunar tector coupled to a 30-cm aperture Cassegrain telescope.</p>
                         <p>Check out 9th March 2016 in EPIC to see what happens during a solar eclipse!</p>
-                        <a href="https://epic.gsfc.nasa.gov/" target="_blank" rel="noreferrer">Visit EPIC</a>
+                        <a href="https://epic.gsfc.nasa.gov/?date=2016-03-09" target="_blank" rel="noreferrer">Visit EPIC</a>
                     </div>
                 </div>
-                <Footer />
             </div>
         </div>
     );

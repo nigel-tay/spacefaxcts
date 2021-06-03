@@ -1,16 +1,19 @@
 import React from 'react';
 import {Image} from "react-bootstrap";
-import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
+import sophoto from "../images/spiritopportunity.png";
+import spiritopportunity from "../models/spirit_opportunity.glb";
 
 function Opportunity(props) {
     return (
         <div className="opportunity-container">
             <div className="section-1">
                 <h1 className="opportunity-title">Spirit and Opportunity</h1>
-                <div className="d-flex justify-content-center">
-                    <iframe src='https://mars.nasa.gov/layout/embed/model/?s=3&rotate=true' width='800' height='450'
-                            scrolling='no' frameBorder='0' allowFullScreen />
+                <div className="model-container">
+                    <model-viewer src={spiritopportunity}
+                                  alt="A 3D model of opportunity"
+                                  ar ar-modes="webxr scene-viewer quick-look"
+                                  environment-image="neutral" auto-rotate camera-controls />
                 </div>
                 <h3 className="opportunity-description">Mars Exploration Rover - Opportunity</h3>
                 <p className="opportunity-description">
@@ -44,7 +47,7 @@ function Opportunity(props) {
                         </p>
                     </div>
                     <div className="opportunity-image-container">
-                        <Image className="opportunity-image" src="https://mars.nasa.gov/imgs/general/layout/overview/MER_twins_white_cyc.png" alt="" />
+                        <Image className="opportunity-image" src={sophoto} alt="" />
                     </div>
                 </div>
 
@@ -59,7 +62,6 @@ function Opportunity(props) {
                         <Link to="/mars/curiosity">{`MER Curiosity >`}</Link>
                     </h5>
                 </div>
-                <Footer />
             </div>
         </div>
     );

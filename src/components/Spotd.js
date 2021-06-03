@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Image} from "react-bootstrap";
-import Footer from "./Footer";
 import axios from "axios";
+import spotdBackground from "../videos/spotd-section1.mp4";
+import s2 from "../images/spotd.JPEG";
 
 function Spotd(props) {
     const [apod, setApod] = useState([])
@@ -16,6 +17,7 @@ function Spotd(props) {
     return (
         <div className="spotd-container">
             <div className="section-1">
+                <video src={spotdBackground} autoPlay loop muted />
                 <h1 className="spotd-title">#SPOTD</h1>
                 <p className="spotd-description">Our Universe</p>
                 <div className="scroll">scroll placeholder</div>
@@ -23,17 +25,17 @@ function Spotd(props) {
 
             <div className="section-2">
                 <div className="split">
-                    <div className="spotd-content">
-                        <h3 className="spotd-content-title">{apod.title}</h3>
-                        <p>{apod.explanation}</p>
-                    </div>
                     <div className="spotd-image-container">
                         <Image className="spotd-image" src={apod.url} alt="daily space image" />
                         <p>{apod.date}</p>
                     </div>
+                    <div className="spotd-content">
+                        <h3 className="spotd-content-title">{apod.title}</h3>
+                        <p>{apod.explanation}</p>
+                    </div>
                 </div>
-                <Footer />
             </div>
+
         </div>
     );
 }

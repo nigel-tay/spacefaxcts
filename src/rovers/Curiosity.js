@@ -1,15 +1,19 @@
 import React from 'react';
 import {Image} from "react-bootstrap";
-import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
+import curiosityPhoto from "../images/curiosity.jpeg";
+import curiosity from "../models/curiosity.glb";
 
 function Curiosity() {
     return (
         <div className="curiosity-container">
             <div className="section-1">
                 <h1 className="curiosity-title">Curiosity</h1>
-                <div className="d-flex justify-content-center">
-                    <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="450px" frameBorder="0"/>
+                <div className="model-container">
+                    <model-viewer src={curiosity}
+                                  alt="A 3D model of curiosity"
+                                  ar ar-modes="webxr scene-viewer quick-look"
+                                  environment-image="neutral" auto-rotate camera-controls />
                 </div>
                 <h3 className="curiosity-description">The biggest bestest boy</h3>
                 <p className="curiosity-description">
@@ -24,7 +28,7 @@ function Curiosity() {
             <div className="section-2">
                 <div className="split">
                     <div className="curiosity-image-container">
-                        <Image className="curiosity-image" src="https://mars.nasa.gov/internal_resources/585" alt="curiosity standing proudly on the surface of mars" />
+                        <Image className="curiosity-image" src={curiosityPhoto} alt="curiosity standing proudly on the surface of mars" />
                     </div>
                     <div className="curiosity-content">
                         <h3 className="curiosity-content-title">Mission overview</h3>
@@ -48,7 +52,6 @@ function Curiosity() {
                         <Link to="/mars/opportunity">{`MER Opportunity >`}</Link>
                     </h5>
                 </div>
-                <Footer />
             </div>
         </div>
     );

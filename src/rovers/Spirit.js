@@ -1,16 +1,22 @@
 import React from 'react';
 import {Image} from "react-bootstrap";
-import Footer from "../components/Footer";
 import {Link} from "react-router-dom";
+import sophoto from "../images/spiritopportunity.png";
+import spiritopportunity from "../models/spirit_opportunity.glb";
+import aboutBackground from "../images/mars-background.jpg";
+import marsBackground from "../videos/mars-section1.mp4";
 
 function Spirit(props) {
     return (
         <div className="spirit-container">
             <div className="section-1">
+                <video src={marsBackground} autoPlay loop muted />
                 <h1 className="spirit-title">Spirit and Opportunity</h1>
-                <div className="d-flex justify-content-center">
-                    <iframe src='https://mars.nasa.gov/layout/embed/model/?s=3&rotate=true' width='800' height='450'
-                            scrolling='no' frameBorder='0' allowFullScreen />
+                <div className="model-container">
+                    <model-viewer src={spiritopportunity}
+                                  alt="A 3D model of spirit"
+                                  ar ar-modes="webxr scene-viewer quick-look"
+                                  environment-image="neutral" auto-rotate camera-controls />
                 </div>
                 <h3 className="spirit-description">Mars Exploration Rover - Spirit</h3>
                 <p className="spirit-description">
@@ -20,10 +26,10 @@ function Spirit(props) {
                 <div className="scroll">scroll placeholder</div>
             </div>
 
-            <div className="section-2">
+            <div className="section-2" style={{backgroundImage: `url(${aboutBackground})`}}>
                 <div className="split">
                     <div className="spirit-image-container">
-                        <Image className="spirit-image" src="https://mars.nasa.gov/imgs/general/layout/overview/MER_twins_white_cyc.png" alt="spirit and opportunity standing side by side" />
+                        <Image className="spirit-image" src={sophoto} alt="spirit and opportunity standing side by side" />
                     </div>
                     <div className="spirit-content">
                         <h3 className="spirit-content-title">Mission overview</h3>
@@ -54,7 +60,7 @@ function Spirit(props) {
                         <Link to="/mars/opportunity">{`MER Opportunity >`}</Link>
                     </h5>
                 </div>
-                <Footer />
+
             </div>
         </div>
     );

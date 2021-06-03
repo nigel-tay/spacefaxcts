@@ -15,8 +15,8 @@ import Opportunity from "./rovers/Opportunity";
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop />
+      <BrowserRouter>
+        <ScrollToTop />
         <Navigation />
         <Switch>
           <Route path="/" exact>
@@ -47,8 +47,7 @@ function App() {
             <Spotd />
           </Route>
         </Switch>
-    </BrowserRouter>
-
+      </BrowserRouter>
   );
 }
 
