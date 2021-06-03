@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
 import spiritopportunity from "../models/spirit_opportunity.glb";
 import opportunityBackground from "../images/mars-background.jpg";
-import spiritBackground from "../images/mars-background.jpg";
 
 function Opportunity() {
     return (
@@ -23,7 +22,11 @@ function Opportunity() {
                     to land on Mars and begin traversing the Red Planet in search
                     of signs of past life.
                 </p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2" style={{backgroundImage: `url(${opportunityBackground})`}}>

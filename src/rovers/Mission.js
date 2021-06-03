@@ -42,7 +42,11 @@ function Mission() {
                 <div className="section-1">
                     <h1 className="mission-title">Mission Photos from {rover}</h1>
                     <p className="mission-description">Images captured from NASA's Mars Rovers</p>
-                    <div className="scroll">scroll placeholder</div>
+                    <div className="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
 
                 <div className="section-2">

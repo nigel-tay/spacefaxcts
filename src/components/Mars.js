@@ -13,7 +13,11 @@ function Mars() {
             <div className="section-1">
                 <h1 className="mars-title">Mars</h1>
                 <p className="mars-description">The red planet</p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2" style={{backgroundImage: `url(${s2})`}}>

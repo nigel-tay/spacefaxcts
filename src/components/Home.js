@@ -12,7 +12,11 @@ function Home() {
         <div className="home-container" style={{backgroundImage: `url(${s1})`}}>
             <div className="section-1">
                 <h1 className="home-title">spacefaXcts</h1>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2 mx-4">

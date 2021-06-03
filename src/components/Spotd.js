@@ -3,7 +3,7 @@ import {Image} from "react-bootstrap";
 import axios from "axios";
 import s1 from "../images/spotd.JPEG";
 
-function Spotd(props) {
+function Spotd() {
     const [apod, setApod] = useState([])
 
     useEffect(() => {
@@ -18,7 +18,11 @@ function Spotd(props) {
             <div className="section-1">
                 <h1 className="spotd-title">#SPOTD</h1>
                 <p className="spotd-description">Our Universe</p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2">

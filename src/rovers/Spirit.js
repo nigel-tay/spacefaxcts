@@ -21,7 +21,11 @@ function Spirit() {
                     One of two rovers launched in 2003 to explore Mars and search for signs of past life,
                     Spirit far outlasted her planned 90-day mission.
                 </p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2" style={{backgroundImage: `url(${spiritBackground})`}}>

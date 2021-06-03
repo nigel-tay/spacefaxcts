@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import curiosityPhoto from "../images/curiosity.jpeg";
 import curiosity from "../models/curiosity.glb";
 import curiosityBackground from "../images/mars-background.jpg";
-import spiritBackground from "../images/mars-background.jpg";
 
 function Curiosity() {
     return (
@@ -24,7 +23,11 @@ function Curiosity() {
                     It launched November 26, 2011 and landed on Mars at 10:32 p.m.
                     PDT on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012)". - taken from https://mars.nasa.gov/msl/mission/overview/
                 </p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2" style={{backgroundImage: `url(${curiosityBackground})`}}>

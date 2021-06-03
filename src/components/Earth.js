@@ -2,7 +2,6 @@ import React from 'react';
 import {Image} from "react-bootstrap";
 import lunarTransit from "../images/lunar-transit.png"
 import s1 from "../images/earth.JPEG"
-import s2 from "../images/earth-background.jpeg";
 
 function Earth() {
 
@@ -11,7 +10,11 @@ function Earth() {
             <div className="section-1">
                 <h1 className="earth-title">Earth</h1>
                 <p className="earth-description">Our blue marble</p>
-                <div className="scroll">scroll placeholder</div>
+                <div className="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
             <div className="section-2">
