@@ -2,7 +2,6 @@ import React from 'react';
 import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import curiosityPhoto from "../images/curiosity.jpeg";
-import curiosity from "../models/curiosity.glb";
 import curiosityBackground from "../images/mars-background.jpg";
 
 function Curiosity() {
@@ -11,10 +10,7 @@ function Curiosity() {
             <div className="section-1">
                 <h1 className="curiosity-title">Curiosity</h1>
                 <div className="model-container">
-                    <model-viewer src={curiosity}
-                                  alt="A 3D model of curiosity"
-                                  ar ar-modes="webxr scene-viewer quick-look"
-                                  environment-image="neutral" auto-rotate camera-controls />
+                    <iframe src="https://mars.nasa.gov/gltf_embed/24584" width="100%" height="450px" frameBorder="0"/>
                 </div>
                 <h3 className="curiosity-description">The biggest bestest boy</h3>
                 <p className="curiosity-description">

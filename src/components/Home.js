@@ -10,6 +10,7 @@ import s1 from "../images/home-section2.jpeg";
 function Home() {
     return (
         <div className="home-container" style={{backgroundImage: `url(${s1})`}}>
+            <div>HEY</div>
             <div className="section-1">
                 <h1 className="home-title">spacefaXcts</h1>
                 <div className="box">

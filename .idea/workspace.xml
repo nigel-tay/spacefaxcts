@@ -4,6 +4,11 @@
     <list default="true" id="0b572c8b-234a-41ec-8fe4-84d0c8831f4e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rovers/Curiosity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rovers/Curiosity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rovers/Opportunity.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rovers/Opportunity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rovers/Spirit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rovers/Spirit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

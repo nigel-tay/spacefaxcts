@@ -2,7 +2,6 @@ import React from 'react';
 import {Image} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import sophoto from "../images/spiritopportunity.png";
-import spiritopportunity from "../models/spirit_opportunity.glb";
 import opportunityBackground from "../images/mars-background.jpg";
 
 function Opportunity() {
@@ -11,10 +10,8 @@ function Opportunity() {
             <div className="section-1">
                 <h1 className="opportunity-title">Spirit and Opportunity</h1>
                 <div className="model-container">
-                    <model-viewer src={spiritopportunity}
-                                  alt="A 3D model of opportunity"
-                                  ar ar-modes="webxr scene-viewer quick-look"
-                                  environment-image="neutral" auto-rotate camera-controls />
+                    <iframe src='https://solarsystem.nasa.gov/gltf_embed/2370' width='100%' height='450px'
+                            frameBorder='0'/>
                 </div>
                 <h3 className="opportunity-description">Mars Exploration Rover - Opportunity</h3>
                 <p className="opportunity-description">
