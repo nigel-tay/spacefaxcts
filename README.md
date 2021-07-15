@@ -1,4 +1,6 @@
 # spacefaXcts
+https://spacefaxctsv2.herokuapp.com/
+
 spacefaXcts is a web app that provides bite sized information to get you started on learning more about Space and it's entities.
 
 ### Description
